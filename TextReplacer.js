@@ -36,10 +36,6 @@ function areAllValuesFilled(id_selector) {
     $('#' + id_selector).find("*").each(function () {
         var KVP = {};
         var id = $(this).attr('id');
-            if(id =="principal_agreement_file_name" || id =="past_agreement_file_name" )
-            {
-                return;
-            }
             if (id != undefined && id != "") {
                 if ($("#" + id).is("button")) {
                     return;
